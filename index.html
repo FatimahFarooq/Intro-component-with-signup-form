@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Learn to code by watching others</h1>
+
+        <p class="desc">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="right">
+        <div class="purple-card">
+          <span> Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+
+        <form action="#">
+          <div class="input-holder">
+            <input
+              type="text"
+              name="f_name"
+              id="f_name"
+              placeholder="First Name"
+            />
+          </div>
+
+          <div class="input-holder">
+            <input
+              type="text"
+              name="l_name"
+              id="l_name"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="input-holder">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="input-holder">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <button type="button" onclick="validate_form()">
+            Claim your free trial
+          </button>
+
+          <p>
+            By clicking the button, you are agreeing to our
+            <span> Terms and Services</span>
+          </p>
+        </form>
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="github.com/FatimahFarooq">Fatima Farooq </a>.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
